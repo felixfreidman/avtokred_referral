@@ -4,6 +4,7 @@ html {
 
 body {
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 .header {
@@ -269,4 +270,247 @@ body {
 .button--disabled {
     pointer-events: none;
     filter: grayscale(1);
+}
+
+@media screen and (max-width: 1200px) {
+    .main .main-description .description-card {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main .main-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-button {
+        font-size: 18px;
+    }
+    .main .main-description .text {
+        font-size: 15px;
+    }
+    .main .main-description {
+        width: 90%;
+    }
+    .main .main-form {
+        width: 90%;
+    }
+    .main .main-text {
+        width: 90%;
+    }
+    .footer {
+        width: 90%;
+        padding: 20px;
+    }
+    .main .button-group {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .main-button {
+        margin-right: 0;
+        width: calc(48% - 60px);
+        text-align: center;
+    }
+    .main .main-description .counter {
+        display: inline;
+    }
+    .header-button--back {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main .main-text .text-header {
+        font-size: 36px;
+    }
+    .header-button--back {
+        font-size: 12px;
+        height: 30px;
+    }
+    .main .main-description .description-card {
+        height: 220px
+    }
+    .main .main-description .card-image {
+        height: 80px;
+    }
+    .main .main-description .text {
+        font-size: 13px;
+    }
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        .footer-company {
+            font-size: 14px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+        .footer-legal,
+        .footer-privacy {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header-button--back {
+        display: none;
+    }
+    .main-banner {
+        height: 50vh;
+    }
+    .main-banner {
+        background-size: 100%;
+    }
+    .main .main-text .text-header {
+        font-size: 30px;
+    }
+    .main .main-text .text-content {
+        font-size: 16px;
+    }
+    .main .main-form .form-aware {
+        font-size: 12px;
+        height: 80px;
+    }
+    .main .main-form .form-title {
+        height: 80px;
+    }
+    .main .main-description .description-card {
+        width: calc(30% - 20px);
+        padding: 20px 10px;
+        height: 180px;
+    }
+    .main-button {
+        font-size: 14px;
+        height: 60px;
+    }
+    .main .button-group {
+        bottom: -30px;
+    }
+    .main .main-description {
+        margin-top: 60px;
+    }
+    .main .main-form {
+        margin-top: 30px;
+    }
+    .footer-row .footer-privacy {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-banner {
+        height: 40vh;
+    }
+    .main .main-description .description-card {
+        width: calc(30% - 20px);
+    }
+    .footer,
+    .main .main-description,
+    .main .main-form,
+    .main .main-text,
+    .main .button-group {
+        width: 95%;
+    }
+    .main .main-description {
+        display: flex;
+        flex-direction: column;
+    }
+    .main .main-description .description-card {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+    .main .main-description .text {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .main-button {
+        font-size: 12px;
+    }
+    .main .main-form .form-aware {
+        font-size: 10px;
+    }
+    .main .main-text .text-header {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main .main-text .text-header {
+        font-size: 22px;
+    }
+    .main .main-text .text-content {
+        font-size: 14px;
+    }
+    .main .main-form .form-title {
+        font-size: 22px;
+    }
+    .main .main-form .form-container .form-input {
+        font-size: 15px;
+    }
+    .main .main-form .form-container .input-submit {
+        font-size: 15px;
+    }
+    .main .main-form .form-aware {
+        font-size: 8px;
+    }
+    .main .main-form .form-container {
+        height: 380px;
+        justify-content: center;
+    }
+    .main-button {
+        width: calc(35% - 40px);
+        padding: 0 20px;
+    }
+    #bigApply {
+        width: calc(60% - 40px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header-logo {
+        margin-right: auto;
+        width: 40%;
+        a {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .footer,
+    .main .button-group,
+    .main .main-description,
+    .main .main-form,
+    .main .main-text {
+        width: 90%;
+    }
+}
+
+@media screen and(max-width:350px) {
+    .main .main-description .text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .main .main-description .description-card {
+        height: 150px;
+    }
+    .main-button {
+        font-size: 11px;
+    }
+    .main .main-form .form-title {
+        font-size: 16px;
+        height: 60px;
+    }
+    .main .main-form .form-container .input-submit {
+        width: 100%;
+    }
+    .main .main-form .form-aware {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        font-size: 7px;
+        height: 60px;
+    }
 }
