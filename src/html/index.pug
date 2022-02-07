@@ -8,82 +8,49 @@ html(lang="en")
         link(rel="shortcut icon", href="./assets/images/content/favicon.png", type="image/x-icon")
         title Кредит на покупку автомобиля, оформить и взять кредит на авто онлайн — «Автокред»
     body 
-        header.header 
-            .header__logo 
-                img(src="./assets/images/content/logoRed.svg", alt="")
-            .header__container    
-                .header__title Кредит на автомобиль
-                .header__subtitle Без первоначального взноса
-
-            .header__numbers 
-            .header__review
-                .header__review-container
-                    .review-block 
-                        .review-block__title За 1 час
-                        .review-block__subtitle решение по кредиту
-                    .review-block 
-                        .review-block__title До 8 000 000 ₽
-                        .review-block__subtitle сумма кредита
-                    .review-block 
-                        .review-block__title От полугода до 8 лет
-                        .review-block__subtitle срок кредитования
-                a(href="#form").header__button--apply Заполнить заявку
-
-
+        header.header
+            .header-logo 
+                a(href="../", target="_self")
+                    img(src="./assets/images/content/logoRed.svg", alt="")
+            a(href="../", target="_self").header-link
+                .header-button--back Вернуться на главную
+            a(href="../", target="_blank").header-link
+                img(src="./assets/images/content/whatapp.svg", alt="")
+            a(href="../", target="_blank").header-link
+                img(src="./assets/images/content/viber.svg", alt="")
         main.main
-            .main__header Онлайн-заявка на автокредит
-            .main__navigation 
-                .navigation-block 
-                    .navigation-stage#banksStage
-                    .navigation-subtitle 16 банков-партнеров специализирующеся на автокредитовании
-                .navigation-block 
-                    .navigation-stage#checkStage  
-                    .navigation-subtitle Кредит на любую категорию авто с пробегом
-                .navigation-block 
-                    .navigation-stage#lastStage  
-                    .navigation-subtitle Без КАСКО, первоначального взноса
-            form.main__form#form
-                .form-header 
-                    .header-content 
-                        img(src="./assets/images/content/shieldForm.svg", alt="")
-                        .header-caption 
-                            | Заполнение анкеты не обязывает вас брать автокредит
-                            br
-                            | Гарантируем: ваши данные останутся в безопасности.
-                .swiper.form-swiper#formSwiper 
-                    .swiper-wrapper 
-                        .swiper-slide.form-slide
-                            .form-content
-                                .form-progress
-                                    .form-progress__row
-                                        .form-progress-caption
-                                            | Получите 
-                                            span.caption-bold +10%
-                                            |  к одобрению, заполнив первый шаг
-                                    .form-progress__bar.completed.completed--0
-                                .form-layout.form-layout--first 
-                                    .form-layout__header Вы уже определились с автомобилем?
-                                    .form-layout__row
-                                        .form-layout__block
-                                            a(href="./yes-form.html").block-btn.btn-yes Да
-                                        .form-layout__block 
-                                            a(href="./no-form.html").block-btn.btn-no Нет 
-                    
-            .main__aware
-                | Действуют для заемщиков, заключивших Договор выдачи Кредита наличными и подписавших Индивидуальные условия выдачи Кредита наличными, предоставленные на основании Заявления на получение Кредита наличными с 1 июня 2014 года.
-                | Ставка от 6,5% до 20,99% годовых определяется для каждого заёмщика индивидуально. При подтверждении целевого использования средств (покупки автомобиля) ставка снижается на 1% процент и может составлять от 5,5% до 19,99%. Ставка действительна на весь срок кредитования. Предложение действует до 20.12.2021. Неустойка за просрочку платежа — 0,1% за каждый день просрочки. Лимит — от 50 000 до 7,5 млн ₽. Срок — от 1 года до 5 лет. Банк оставляет за собой исключительное право на изменение срока действия предложения и на предоставление или отказ в предоставлении кредита. АО «Альфа-Банк». Ген. лицензия ЦБ РФ № 1326 от 16.01.2015.
-                | Пример расчёта платежей для кредита 255 000 ₽ на 5 лет по ставке 8,5% годовых. Переплата по процентам — 71 631 ₽, стоимость страховки на 5 лет —  55 080 ₽. Всего за 5 лет вам нужно выплатить 381 711 ₽. Расчёт приблизительный. Точная сумма зависит от даты выдачи кредита.
-        footer.footer 
-            .footer-row
-                span.footer-company © ООО "Автокредит", 2017-2022. Все права защищены
-                a(href="https://avtokred.com/privacy", target="_blank").footer-privacy Политика конфиденциальности
-                span.footer-legal ИНН: 0301201060
-                span.footer-legal ОГРН: 1160327065315
-            .footer-row
-                span.footer-developer 
-                    | Создано
-                    a(href="https://github.com/felixfreidman", target="_blank").footer-privacy Феликсом Фрейдманом
-            
+            .main-banner 
+                .button-group
+                    a(href="Consult").main-button Отправить заявку на консультацию
+                    a(href="#form").main-button Заполнить анкету
+            .main-description 
+                .description-card
+                    img(src="./assets/images/content/People.svg", alt="").card-image
+                    .card-content
+                        span.counter 1.
+                        span.text Рекоммендуйте компанию "Автокредит" друзьям, родным, близким
+
+                .description-card 
+                    img(src="./assets/images/content/Phone.svg", alt="").card-image
+                    .card-content
+                        span.counter 2.
+                        span.text Отправляете номер телефона менеджерам компании "Автокредит"
+                .description-card 
+                    img(src="./assets/images/content/Deal.svg", alt="").card-image
+                    .card-content
+                        span.counter 3.
+                        span.text При успешной сделке компания "Автокредит" платит ваш платеж по Автокредиту
+            .main-text 
+                .text-header Lorem ipsum dolor sit amet
+                .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
+                .text-header Lorem ipsum dolor sit amet
+                .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
+                .text-header Lorem ipsum dolor sit amet
+                .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
+                .text-header Lorem ipsum dolor sit amet
+                .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
+
+        footer.footer
         script(src="./assets/js/jquery.min.js")  
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js") 
