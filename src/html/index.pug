@@ -58,7 +58,7 @@ html(lang="en")
                 .form-container
                     input#userName(type="text", name="name", placeholder="Фамилия, имя и отчество", required).form-input 
                     input#userPhone(type="tel", name="phone", data-inputmask="'mask': '+7(999) 999-99-99'",required="",placeholder="Номер телефона").form-input
-                    input#dateBirth(type="text", name="birth", placeholder="Дата Рождения",onfocus="(this.type='date')" ,onblur="(this.type='text')", required).form-input
+                    input#dateBirth(type="date", name="birth", placeholder="Дата Рождения", required).form-input
                     button#applyformSubmit(type="submit").input-submit Зарегистрироваться
                 .form-aware 
                     | Заполнение анкеты не обязывает вас брать автокредит
