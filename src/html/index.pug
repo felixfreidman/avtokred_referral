@@ -22,7 +22,7 @@ html(lang="en")
             .main-banner 
                 .button-group
                     a(href="Consult").main-button Отправить заявку на консультацию
-                    a(href="#form").main-button Заполнить анкету
+                    a(href="#formApply").main-button Заполнить анкету
             .main-description 
                 .description-card
                     img(src="./assets/images/content/People.svg", alt="").card-image
@@ -49,8 +49,27 @@ html(lang="en")
                 .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
                 .text-header Lorem ipsum dolor sit amet
                 .text-content Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri. Lorem ipsum dolor sit amet, sea ad detracto reprimique repudiandae, nec mandamus accommodare eu. Quas copiosae honestatis duo ei, nemore mediocrem mediocritatem ei mea, ei iusto mediocrem ius. No qualisque consetetur intellegam has. Pro ex aperiri accusamus, duo saepe decore evertitur ea. Eu affert saperet nam. Eos dolor oratio maluisset in, quot integre placerat nam et, te wisi assentior vulputate pri.
-
+            form#formApply.main-form 
+                .form-title Зарегистрироваться
+                .form-container
+                    input#userName(type="text", name="name", placeholder="Фамилия, имя и отчество", required).form-input 
+                    input#userPhone(type="tel", name="phone", data-inputmask="'mask': '+7(999) 999-99-99'",required="",placeholder="Номер телефона").form-input
+                    input#dateBirth(type="text", name="birth", placeholder="Дата Рождения",onfocus="(this.type='date')" ,onblur="(this.type='text')", required).form-input
+                    button#applyformSubmit(type="submit").input-submit Зарегистрироваться
+                .form-aware 
+                    | Заполнение анкеты не обязывает вас брать автокредит
+                    br
+                    | Гарантируем: ваши данные останутся в безопасности.
         footer.footer
+            .footer-row
+                span.footer-company © ООО "Автокредит", 2017-2022. Все права защищены
+                a(href="https://avtokred.com/privacy", target="_blank").footer-privacy Политика конфиденциальности
+                span.footer-legal ИНН: 0301201060
+                span.footer-legal ОГРН: 1160327065315
+            .footer-row
+                span.footer-developer 
+                    | Создано
+                    a(href="https://github.com/felixfreidman", target="_blank").footer-privacy Феликсом Фрейдманом
         script(src="./assets/js/jquery.min.js")  
         script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js") 
